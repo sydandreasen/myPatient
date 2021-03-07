@@ -1,0 +1,372 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish";
+}
+
+body {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  background-color: #f3f3f3;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.logoImage {
+  margin-top: 5vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.faculty-login {
+  display: inline-block;
+  border-bottom: solid 3px #ffdf6c;
+  margin: 2% auto;
+}
+
+.faculty-login h1 {
+  line-height: 1;
+  font-weight: bold !important;
+}
+
+.App .home .grid-2fr-1fr {
+  display: grid;
+  padding: 2%;
+  grid-template-columns: 1.5fr 1fr;
+  color: #707070;
+}
+
+.doc-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10%;
+}
+
+.doc-buttons .ant-btn {
+  background-color: #ffdf6c !important;
+  color: #202020;
+  border: none;
+  font-weight: bold !important;
+  width: 80%;
+  cursor: pointer;
+  margin: auto;
+}
+
+.doc-buttons .ant-btn:hover {
+  border: 2px solid #202020;
+}
+
+.doc-buttons .ant-btn:active {
+  border: 2px solid #202020;
+}
+
+#loginButton {
+  background-color: #202020 !important;
+  color: #ffdf6c;
+  border: 2px solid #ffdf6c;
+  width: 7.5rem;
+  font-weight: bold !important;
+}
+
+#loginButton:hover {
+  border: 4px solid #ffdf6c;
+}
+
+.ant-input {
+  border: 3px solid #ffdf6c;
+  padding: 1%;
+  margin: 3%;
+  width: 50%;
+  box-shadow: none;
+  font-size: 30px;
+}
+
+.ant-input:focus {
+  border: 3px solid #ffdf6c;
+  box-shadow: none;
+}
+
+.ant-input:hover {
+  border: 3px solid #ffdf6c;
+  box-shadow: none;
+}
+
+.doc-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: #3f3f3f;
+  color: #f3f3f3;
+  padding: 10% 0;
+  height: 100%;
+  border-right: 5px solid #ffdf6c;
+}
+
+.sidebar .profile {
+  border-bottom: 3px solid #ffdf6c;
+  padding-bottom: 5%;
+}
+
+.sidebar .profile h2 {
+  margin: 0 auto;
+  line-height: 1.2;
+}
+
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar p {
+  color: #f3f3f3;
+  font-weight: bold;
+}
+
+.sidebar .profile img {
+  width: 55%;
+  border-radius: 50%;
+  border: solid 3px #ffdf6c;
+  margin-bottom: 5%;
+}
+
+.patients {
+  margin: 5% auto;
+}
+
+.patient-list {
+  text-align: left;
+  padding: 0 5%;
+}
+
+.patient-list div {
+  margin: 4%;
+}
+
+.patient-list button {
+  background-color: #3f3f3f;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: calc(16px + 0.4vw);
+}
+
+.patient-list button:active {
+  border: none;
+  box-shadow: none;
+}
+
+.patient-list h2 {
+  display: inline-block;
+}
+
+.legend {
+  padding: 0 5%;
+  position: absolute;
+  bottom: 20px;
+  left: -4%;
+}
+
+.patient-list .ant-badge-status-dot {
+  margin: auto 1%;
+  width: 0.95vw;
+  height: 0.95vw;
+  margin-bottom: 38%;
+}
+
+.legend h4 {
+  display: inline-block;
+}
+
+.legend .ant-badge-status-dot {
+  margin: auto 1%;
+  width: 0.75vw;
+  height: 0.75vw;
+  margin-bottom: 10%;
+}
+
+.dashboard {
+  background-color: #f3f3f3;
+  padding: 3% 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard .title h1 {
+  font-size: calc(1vw + 48px);
+  line-height: 1;
+  margin-bottom: 2%;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.dashboard .title img {
+  vertical-align: top;
+  margin-top: -0.75%;
+  margin-left: 1%;
+  max-width: 175px;
+}
+
+.dashboard .title {
+  border-bottom: solid 4px #ffdf6c;
+  margin-bottom: 4%;
+}
+.briefing {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-gap: 5%;
+  margin: 5% auto;
+}
+.briefing div h1 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 32px;
+}
+
+.briefing .ant-badge-status-dot {
+  margin: auto 1%;
+  width: 0.95vw;
+  height: 0.95vw;
+  margin-bottom: 80%;
+}
+
+.briefing .left-col {
+  width: 100%;
+  text-align: left;
+  padding-left: 15%;
+}
+
+.briefing .yellow-btn {
+  background-color: #ffdf6c !important;
+  color: #202020;
+  border: none;
+  font-weight: bold !important;
+  margin: 3% auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+.briefing .yellow-btn:hover {
+  border: 2px solid #ffdf6c;
+}
+
+.dark-btn {
+  background-color: #202020 !important;
+  color: #f3f3f3;
+  border: none;
+  font-weight: bold !important;
+  margin: 3% auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar .profile .ant-btn {
+  width: 50%;
+  cursor: pointer;
+}
+
+.briefing .dark-btn:hover {
+  border: 2px solid #202020;
+}
+.briefing .right {
+  text-align: right;
+  padding-right: 15%;
+}
+.briefing .right h2 {
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5%;
+}
+
+.info-card {
+  background-color: #707070;
+  width: 90%;
+  margin: 4% auto;
+  border: 4px solid #202020;
+  border-radius: 1rem;
+  padding: 1% 3%;
+}
+
+.info-card table {
+  width: 100%;
+  color: #f3f3f3;
+  font-weight: bold;
+  text-align: left;
+}
+
+.info-card table td {
+  width: 50%;
+  font-size: calc(12px + 0.5vw);
+  line-height: 2.5;
+}
+
+.diagnosis .info-card {
+  background-color: #ffdf6c;
+}
+.diagnosis .info-card p {
+  color: #202020;
+  font-size: calc(10px + 0.5vw);
+  line-height: 2.5;
+}
+
+.diagnosis .info-card td {
+  color: #202020;
+}
+
+.diagnosis .info-card h1 {
+  color: #202020 !important;
+}
+
+.info-card p {
+  font-size: calc(12px + 0.5vw);
+  color: #f3f3f3;
+  font-weight: bold;
+  text-align: left;
+  line-height: 2.5;
+  margin: 0 auto;
+}
+
+.home footer {
+  position: absolute;
+  height: 2em;
+  bottom: 4em;
+  width: 100%;
+  text-align: center;
+}
+
+.home footer h3 {
+  margin: 0 auto;
+  font-weight: bold;
+}
